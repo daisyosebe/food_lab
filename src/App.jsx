@@ -5,6 +5,12 @@ import Asian from "./pages/asian";
 import African from "./pages/african";
 import European from "./pages/european";
 import SouthAmerica from "./pages/southamerican";
+import MyKitchen from "./pages/mykitchen";
+import Cooked from "./pages/cooked";
+import Favorite from "./pages/favorite";
+import Pantry from "./pages/pantry";
+import Cart from "./pages/cart";
+
 import './App.css'
 
 
@@ -62,7 +68,45 @@ function App(){
         <SouthAmerica/>
       }
     />
+
+<Route
+      path="/MyKitchen"
+      element={
+        <MyKitchen/>
+      }
+    />
+
+<Route
+      path="/Cooked"
+      element={
+        <Cooked/>
+      }
+    />  
+
+<Route
+      path="/Favorite"
+      element={
+        <Favorite/>
+      }
+    />
+
+<Route
+      path="/Pantry"
+      element={
+        <Pantry/>
+      }
+    />
+
+<Route
+      path="/Cart"
+      element={
+        <Cart/>
+      }
+    />  
 </Routes>
+
+
+
 </BrowserRouter>  )
 }
 
