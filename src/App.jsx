@@ -1,15 +1,16 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/homepage";
-import Asian from "./pages/asian";
-import African from "./pages/african";
-import European from "./pages/european";
-import SouthAmerica from "./pages/southamerican";
-import MyKitchen from "./pages/mykitchen";
-import Cooked from "./pages/cooked";
-import Favorite from "./pages/favorite";
-import Pantry from "./pages/pantry";
-import Cart from "./pages/cart";
+import HomePage from "./pages/homepage/HomePage.jsx";
+import Asian from "./pages/asian/Asian.jsx";
+import African from "./pages/african/African.jsx";
+import European from "./pages/european/European.jsx";
+import SouthAmerica from "./pages/southamerican/SouthAmerica.jsx";
+import MyKitchen from "./pages/mykitchen/MyKitchen.jsx";
+import Cooked from "./pages/cooked/Cooked.jsx";
+import Favorite from "./pages/favorite/Favorite.jsx";
+import Pantry from "./pages/pantry/Shelf.jsx";
+import Cart from "./pages/cart/Cart.jsx";
+
 
 import './App.css'
 
@@ -30,7 +31,7 @@ import './App.css'
 //   )
 // }
 
-function App(){
+export default function App(){
   return (
 <BrowserRouter basename="/food_lab">
 <Routes>
@@ -110,4 +111,3 @@ function App(){
 </BrowserRouter>  )
 }
 
-export default App
