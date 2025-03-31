@@ -1,6 +1,6 @@
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Cover from "./pages/cover";
+import HomePage from "./pages/homepage";
 import Asian from "./pages/asian";
 import African from "./pages/african";
 import European from "./pages/european";
@@ -37,7 +37,7 @@ function App(){
     <Route
       path="/"
       element={
-        <Cover/>
+        <HomePage/>
       }
     />
 
