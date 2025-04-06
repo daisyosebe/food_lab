@@ -10,7 +10,7 @@ import Cooked from "./pages/cooked/Cooked.jsx";
 import Favorite from "./pages/favorite/Favorite.jsx";
 import Pantry from "./pages/pantry/Shelf.jsx";
 import Cart from "./pages/cart/Cart.jsx";
-
+import ProtectedRoute from "./context/ProtectedRoute.jsx";
 
 import './App.css'
 
@@ -73,36 +73,43 @@ export default function App(){
 <Route
       path="/MyKitchen"
       element={
-        <MyKitchen/>
+        <ProtectedRoute>
+          <MyKitchen/>
+        </ProtectedRoute>
       }
     />
 
 <Route
       path="/Cooked"
       element={
-        <Cooked/>
+        <ProtectedRoute>
+          <Cooked/>
+        </ProtectedRoute>
       }
     />  
 
 <Route
       path="/Favorite"
       element={
-        <Favorite/>
-      }
+        <ProtectedRoute>
+          <Favorite/>
+        </ProtectedRoute>      }
     />
 
 <Route
       path="/Pantry"
       element={
-        <Pantry/>
-      }
+        <ProtectedRoute>
+          <Pantry/>
+        </ProtectedRoute>      }
     />
 
 <Route
       path="/Cart"
       element={
-        <Cart/>
-      }
+        <ProtectedRoute>
+          <Cart/>
+        </ProtectedRoute>      }
     />  
 </Routes>
 
