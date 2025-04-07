@@ -33,7 +33,7 @@ import './App.css'
 
 export default function App(){
   return (
-<BrowserRouter basename="/food_lab">
+<BrowserRouter basename="/">
 <Routes>
     <Route
       path="/"
