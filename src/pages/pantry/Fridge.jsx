@@ -1,4 +1,4 @@
-export default function African() {
+export default function Fridge() {
     return <div>Fridge </div>;
   }
   

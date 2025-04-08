@@ -1,4 +1,4 @@
-export default function African() {
+export default function Favorite() {
     return <div>Favorite Recipes</div>;
   }
   
