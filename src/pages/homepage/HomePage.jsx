@@ -1,4 +1,4 @@
-import Login from "../../components/login/Login.jsx";
+// import Login from "../../components/login/Login.jsx";
 import Nav from "../../components/nav/Nav.jsx";
 import Cover from "../../assets/cover.jpg";
 

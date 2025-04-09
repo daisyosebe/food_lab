@@ -10,7 +10,8 @@ import Cooked from "./pages/cooked/Cooked.jsx";
 import Favorite from "./pages/favorite/Favorite.jsx";
 import Pantry from "./pages/pantry/Shelf.jsx";
 import Cart from "./pages/cart/Cart.jsx";
-import ProtectedRoute from "./context/ProtectedRoute.jsx";
+// import ProtectedRoute from "./context/ProtectedRoute.jsx";
+import SamosaRecipe from "./pages/african/Samosas.jsx"
 
 import './App.css'
 
@@ -46,6 +47,13 @@ export default function App(){
       path="/African"
       element={
         <African/>
+      }
+    />
+
+<Route
+      path="/SamosaRecipe"
+      element={
+        <SamosaRecipe/>
       }
     />
 
