@@ -1,32 +1,31 @@
-// src/components/Nav.jsx
-import { NavLink } from "react-router-dom";
+// src/components/nav/Nav.jsx
+import { useState } from "react";
 
 const tabs = [
-  { name: "Home", path: "/" },
-  { name: "Recipes", path: "/recipes" },
-  { name: "Favorites", path: "/favorites" },
-  { name: "Cooked", path: "/cooked" },
-  { name: "Cart", path: "/cart" },
-  { name: "Pantry", path: "/pantry" }
+  { label: "Recipes", href: "/recipes" },
+  { label: "Favorites", href: "/favorites" },
+  { label: "Pantry", href: "/pantry" },
+  { label: "Cooked", href: "/cooked" },
+  { label: "Cart", href: "/cart" },
 ];
 
 const Nav = () => {
   return (
-    <div className="w-48 bg-white shadow-md h-screen p-4 flex flex-col gap-4 border-r">
-      {tabs.map((tab) => (
-        <NavLink
-          key={tab.name}
-          to={tab.path}
-          className={({ isActive }) =>
-            `relative px-4 py-2 text-lg font-medium transition-all duration-300 rounded-r-full overflow-hidden 
-            before:absolute before:left-0 before:top-0 before:h-full before:w-full 
-            before:transition-transform before:duration-300 before:bg-blue-100
-            before:z-[-1] hover:before:translate-x-0 
-            ${isActive ? "text-blue-700 before:translate-x-0" : "text-gray-700 before:translate-x-[-100%]"}`
-          }
+    <div className="absolute right-0 top-1/2  -translate-y-1/2 z-10 flex flex-col items-end space-y-2 ">
+      {tabs.map((tab, index) => (
+        <a
+          key={index}
+          href={tab.href}
+          className="group relative w-12 h-10 bg-orange-400 rounded-l-full shadow-md flex items-center justify-center transition-all duration-300 hover:w-32"
         >
-          {tab.name}
-        </NavLink>
+          <span className="text-white font-semibold z-10 group-hover:translate-x-2 transition-transform duration-300">
+
+            🍽️
+          </span>
+          <span className="absolute left-12 opacity-0 group-hover:opacity-100 text-sm font-medium text-gray-700 whitespace-nowrap transition-opacity duration-300">
+            {tab.label}
+          </span>
+        </a>
       ))}
     </div>
   );

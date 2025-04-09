@@ -4,24 +4,26 @@ import Cover from "../../assets/cover.jpg";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-orange-50 flex flex-col">
+   <div className="min-h-screen bg-orange-50 flex flex-col">
       {/* Navbar */}
-      <Nav />
 
       {/* Container wrapping image and form */}
-      <div className="flex flex-row flex-1 items-center justify-center px-4 py-8 gap-8 border-[5px] border-black">
+      <div className="flex flex-row flex-1 items-center justify-center px-4 py-8 gap-8">
+
+
         {/* Image Section */}
-        <div className="w-1/2 flex justify-center border-[5px] border-black">
+        <div className="w-1/2 relative flex justify-center item-center">
           <img
             src={Cover}
             alt="Cookbook"
-            className="max-w-full h-auto border-[5px] border-black"
+            className="max-w-full h-auto rounded-lg shadow-lg"
           />
+      <Nav />
         </div>
 
         {/* Form Section */}
-        <div className="w-1/2 border-[5px] border-black">
-          <Login />
+        <div className="w-1/2">
+          {/* <Login /> */}
         </div>
       </div>
     </div>

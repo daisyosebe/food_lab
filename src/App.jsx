@@ -73,43 +73,46 @@ export default function App(){
 <Route
       path="/MyKitchen"
       element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <MyKitchen/>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       }
     />
 
 <Route
       path="/Cooked"
       element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <Cooked/>
-        </ProtectedRoute>
+        // </ProtectedRoute>
       }
     />  
 
 <Route
       path="/Favorite"
       element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <Favorite/>
-        </ProtectedRoute>      }
+        // </ProtectedRoute>     
+       }
     />
 
 <Route
       path="/Pantry"
       element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <Pantry/>
-        </ProtectedRoute>      }
+        // </ProtectedRoute>     
+       }
     />
 
 <Route
       path="/Cart"
       element={
-        <ProtectedRoute>
+        // <ProtectedRoute>
           <Cart/>
-        </ProtectedRoute>      }
+        // </ProtectedRoute>     
+       }
     />  
 </Routes>
 
